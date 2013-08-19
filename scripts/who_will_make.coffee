@@ -1,7 +1,7 @@
 candidates = [
   "Gabriel",
   "Octavio",
-  "Bátima",
+  "Batimá",
   "Artur",
   "Braz",
   "Ganine",

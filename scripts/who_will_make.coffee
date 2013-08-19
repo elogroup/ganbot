@@ -9,10 +9,7 @@ candidates = [
   "Laura"
 ]
 
-say_who = (msg) ->
-  who = msg.random candidates
-  msg.send "#{who} vai fazer café!"
-
 module.exports = (robot) ->
-  robot.hear /(who will make coffee?|quem vai fazer caf(e|é)?|quero caf(e|é)*)/i, (msg) ->
-    say_who(msg)
+
+  robot.respond /(who will make coffee|quem vai fazer caf(e|é)|que+ro+ caf(e|é)+)( me)?/i, (msg) ->
+    msg.send "#{msg.random candidates} vai fazer café!"

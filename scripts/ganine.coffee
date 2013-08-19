@@ -1,3 +1,10 @@
+# Description:
+#   Everybody ganining!!
+#
+# Commands:
+#   ganinar - generate a random ganine jargon.
+#   selo ganine - puts the ganine seal in the room.
+
 ganine_jargons = [
   "ehh",
   "pode ser",

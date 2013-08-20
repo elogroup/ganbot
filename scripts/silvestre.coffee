@@ -4,7 +4,7 @@
 # Commands:
 #   ai sim - lucas silvestre's most famous quote as a meme
 
-silvestre_meme = "http://f.cl.ly/items/46152V2x03392k3v2I2S/lucas-ai-sim.png"
+silvestre_meme = "http://f.cl.ly/items/3g3D0i351M020h3m181C/lucas-ai-sim.png"
 
 module.exports = (robot) ->
 

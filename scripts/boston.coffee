@@ -4,7 +4,7 @@
 # Commands:
 #   boston - generates random expressions for doing the number two
 
-evacutations = [
+evacuations = [
   "Evacuar",
   "Atender o chamado da natureza",
   "Construir uma barragem",
@@ -109,4 +109,4 @@ evacutations = [
 module.exports = (robot) ->
 
  robot.hear /passar um fax|enviar um fax|evacuar|boston/i, (msg) ->
-   msg.send "Você quis dizer: #{msg.random evacutations}?"
+   msg.send "Você quis dizer: #{msg.random evacuations}?"

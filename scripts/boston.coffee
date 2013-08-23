@@ -108,5 +108,5 @@ evacuations = [
 
 module.exports = (robot) ->
 
- robot.hear /passar um fax|enviar um fax|evacuar|boston/i, (msg) ->
+ robot.hear /fax|evacuar|boston/i, (msg) ->
    msg.send "Você quis dizer: #{msg.random evacuations}?"

@@ -6,6 +6,7 @@
 
 caetano_image_uri = "http://www.tecnoetc.com.br/wp-content/uploads/2013/05/Burro.jpg"
 
+<<<<<<< HEAD
 class SayWithDelay
 
   constructor: (@msg) ->
@@ -21,7 +22,6 @@ class SayWithDelay
   batchSay: (array) ->
     for a in array
       @say(a.text,a.delay)
-
 
 module.exports = (robot) ->
 

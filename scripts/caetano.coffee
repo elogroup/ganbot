@@ -9,7 +9,7 @@ caetano_image_uri = "http://www.tecnoetc.com.br/wp-content/uploads/2013/05/Burro
 say = (say,delay,msg) ->
   setTimeout (->
     msg.send say
-    ),delay
+  ),delay
 
 module.exports = (robot) ->
 
@@ -22,6 +22,6 @@ module.exports = (robot) ->
     say "isso aí que você disse é tudo burrice,", 5000, msg
     say "burrice...", 6000, msg
     say "Eu num num num", 7000, msg
-    say "num cunsigo gravar muito bem o que você falou porque você fala de uma maneira burra...", 8000, msg  
+    say "num cunsigo gravar muito bem o que você falou porque você fala de uma maneira burra...", 8000, msg
     say "Entendeu...?", 9000, msg
     say caetano_image_uri, 11000, msg

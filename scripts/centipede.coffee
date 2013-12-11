@@ -4,8 +4,8 @@
 # Commands:
 #   centopeia - Generates a centipede to annoy you
 
-the_draw = [
-  "Mil desculpas, centopéia passando...
+the_draw = """
+Mil desculpas, centopéia passando...
 ...... .\...../
 .....╚⊙ ⊙╝
 ..╚═(███)═╝
@@ -441,8 +441,8 @@ the_draw = [
 ..╚═(███)═╝
 .╚═(███)═╝
 ╚═(███)═╝
-╚═(███)═╝"
-]
+╚═(███)═╝
+"""
 
 module.exports = (robot) ->
 

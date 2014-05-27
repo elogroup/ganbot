@@ -14,7 +14,6 @@ class CatalogThisClient
       .query({url: url})
       .get() (err, res, body) =>
         data = JSON.parse(body)
-
         callback.call(@context,data)
 
 
@@ -36,7 +35,6 @@ module.exports = (robot) ->
     url = msg.match[1] + '://' + msg.match[3]
 
     client.search url, (search_result) ->
-      msg.send Object.keys(search_result)
       if Object.keys(search_result).length > 0
         msg.send "Oficialmente old!!"
       else

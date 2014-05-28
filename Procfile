@@ -1,1 +1,1 @@
-hubot: bin/hubot -a hall -n GanBot
+web: bin/hubot --adapter hipchat

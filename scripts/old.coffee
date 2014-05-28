@@ -6,15 +6,13 @@
 
 answers = [
   "Ae, para com essa arrogância de #old aí cara.",
-  "O #old de hoje era o #new de ontem.",
-  "O que é #old pra você pode ser #new para alguém, pense nisso."
-  "Geração #old não agrega no camarote.",
-  "Essa pessoa que você mandou #old poderia ser seu chefe. ",
-  "Bacana isso aí, mas é muito #old.",
-  "http://d.pr/i/PBhz.gif"
+  "O old de hoje era o #new de ontem.",
+  "O que é #ld pra você pode ser #new para alguém, pense nisso."
+  "Geração do old, tsc.",
+  "Essa pessoa que você mandou old poderia ser seu chefe. ",
+  "Bacana isso aí, mas é muito #old."
 ]
 
 module.exports = (robot) ->
-
- robot.hear /old/i, (msg) ->
-   msg.send msg.random answers
+  robot.hear /\bo+l+d\b/i, (msg) ->
+    msg.send msg.random answers

@@ -5,6 +5,14 @@
 url_regexp = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/i
 catalog_this_url = 'http://catalog-this.herokuapp.com'
 
+old_answers = [
+  "Oficialmente old!"
+  "Ae, isso é old cara.",
+  "Bacana isso aí, mas é old.",
+  "https://i.imgflip.com/961dr.jpg",
+  "https://i.imgflip.com/961jf.jpg"
+]
+
 class CatalogThisClient
   constructor: (@server_url,@msg,@context) ->
 
@@ -16,7 +24,6 @@ class CatalogThisClient
         data = JSON.parse(body)
         callback.call(@context,data)
 
-
   catalog: (url,callback) ->
     data  = {}
     @msg.http(catalog_this_url + '/catalog/')
@@ -26,9 +33,6 @@ class CatalogThisClient
           data = JSON.parse(body)
           callback.call(@context,data)
 
-
-
-
 module.exports = (robot) ->
   robot.hear url_regexp, (msg) ->
     client = new CatalogThisClient(catalog_this_url,msg,this)
@@ -36,13 +40,8 @@ module.exports = (robot) ->
 
     client.search url, (search_result) ->
       if Object.keys(search_result).length > 0
-        msg.send "Oficialmente old!!"
+        msg.send msg.random old_answers
       else
         client.catalog url, (new_link) ->
-          msg.send "Tá registrado! #{new_link.site} -- #{new_link.title}"
-
-
-
-
-
-
+          if new_link.title != "No title"
+            msg.send "#{new_link.title}"

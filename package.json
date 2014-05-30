@@ -29,7 +29,7 @@
 
   "dependencies": {
     "hubot":         "2.6.4",
-    "hubot-scripts": "2.5.4",
+    "hubot-scripts": "2.5.14",
     "htmlparser":    "1.7.6",
     "soupselect":    "0.2.0",
     "hubot-hipchat": "2.6.4"

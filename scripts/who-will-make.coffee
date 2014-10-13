@@ -5,14 +5,12 @@
 #   hubot quero cafe - Picks the next barista.
 
 barista_candidates = [
-  "Gabriel",
   "Octavio",
-  "Batimá",
   "Artur",
-  "Braz",
   "Ganine",
   "Moretti",
-  "Laura"
+  "Georges",
+  "Carol"
 ]
 
 module.exports = (robot) ->

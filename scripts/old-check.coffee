@@ -9,8 +9,7 @@ old_answers = [
   "Oficialmente old!"
   "Ae, isso é old cara.",
   "Bacana isso aí, mas é old.",
-  "https://i.imgflip.com/961dr.jpg",
-  "https://i.imgflip.com/961jf.jpg"
+  "http://i.imgur.com/0qTNsQq.png"
 ]
 
 class CatalogThisClient
